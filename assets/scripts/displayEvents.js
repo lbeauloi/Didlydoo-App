@@ -18,7 +18,7 @@ export function displayEvents(allEvents) {
         const titleBtn = document.createElement('div');
         titleBtn.classList.add('titleBtn');
 
-        const name = document.createElement('h3');
+        const name = document.createElement('h2');
         name.textContent = event.name;
         
         const btnContainer = document.createElement('div');
@@ -73,7 +73,18 @@ export function displayEvents(allEvents) {
 
             event.dates.forEach(el => {
                 const td = document.createElement('td');
-                td.textContent = el.attendees[i].available;
+                // td.textContent = el.attendees[i].available;
+                if (el.attendees[i].available === true) {
+                    td.textContent = 'V';
+                    td.style.color = 'rgba(0, 128, 0, 0.6)';
+                }
+                else if (el.attendees[i].available === false) {
+                    td.textContent = 'X';
+                    td.style.color = 'rgba(220, 20, 60, 0.6)';
+                }
+                else {
+                    td.textContent = '';
+                }
                 trb.appendChild(td);
             })
             
