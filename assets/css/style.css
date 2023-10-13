@@ -1,7 +1,6 @@
 /*
 This file is used to contain all vendor imports.
 */
-@import url(github.com/necolas/normalize.css/);
 /*
 This file is used to contain all abstracts imports.
 Files inside this folder can contain abstract settings, helpers or functions. They have no direct output.
