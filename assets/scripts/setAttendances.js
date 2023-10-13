@@ -1,9 +1,6 @@
 import { getAllEvents } from "./getAllEvents.js";
+import { getEvent } from "./getEvent.js";
 const url = 'http://localhost:3000';
-
-//getAllEvents();
-
-//console.log(`${url}/api/events/[id]`);
 
 export function setAttendances(data, id)
 {
@@ -26,12 +23,13 @@ export function setAttendances(data, id)
         console.log(isNameThere);
         if (isNameThere)
         {
-            //addAttendance(data, id);
+            editAttendance(data, id);
         }
         else
         {
             console.log(data);
-            //editAttendance(data, id);
+            console.log(JSON.stringify(data));
+            addAttendance(data, id);
         }
     })
 }
@@ -41,9 +39,18 @@ async function addAttendance(data, id)
     const response = await fetch(`${url}/api/events/${id}/attend`, 
     {
         method: "POST",
-        body: data,
+        headers: { 
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    })
+    .then((response) => {
+        console.log("Attendance added");
+        getAllEvents();
+      })
+    .catch((error) => {
+    console.error("Error :", error);
     });
-    getAllEvents();
 }
 
 async function editAttendance(data, id) 
@@ -51,29 +58,16 @@ async function editAttendance(data, id)
     const response = await fetch(`${url}/api/events/${id}/attend`, 
     {
         method: "PATCH",
-        body: data, 
+        headers: { 
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data), 
+    })
+    .then((response) => {
+        console.log("Attendance edited");
+        getAllEvents();
+      })
+    .catch((error) => {
+    console.error("Error :", error);
     });
-    getAllEvents();
 }
-
-export async function getEvent(id) 
-{
-    const response = await fetch(`${url}/api/events/${id}`, 
-    {
-        method: "GET",
-    });
-
-    return response.json();
-}
-
-// getEvent('f5b6564b5dc4')
-//     .then((data) => {
-//         console.log(data);
-//     })
-
-//addAttendance()
-
-// add data
-//{ name: string, dates : [ { date: date 'YYYY-MM-DD', available: boolean (true/false) } ] }
-// edit data
-//{ name: string, dates : [ { date: date 'YYYY-MM-DD', available: boolean (true/false) } ] }

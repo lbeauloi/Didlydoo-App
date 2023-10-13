@@ -48,9 +48,8 @@ export function displayAttendances(dates, id, parent)
             let isAvailable;
             if (checkboxes[i].children[0].checked) isAvailable = true;
             else if (checkboxes[i].children[1].checked) isAvailable = false;
-            else isAvailable = null;
 
-            eventDates.push({ date: dates[i], available: isAvailable});
+            if (isAvailable != null) eventDates.push({ date: dates[i], available: isAvailable});
         }
         let data = { name: userName, dates: eventDates};
         console.log(data);
