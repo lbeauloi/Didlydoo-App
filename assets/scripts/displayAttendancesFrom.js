@@ -24,12 +24,12 @@ export function displayAttendances(dates, id, parent)
 
         let checkboxTrue = document.createElement("input");
         checkboxTrue.setAttribute("type", "radio");
-        checkboxTrue.setAttribute("name", `radio${element}${id}`);
+        checkboxTrue.setAttribute("name", `radio${element.date}${id}`);
         checkboxContainer.append(checkboxTrue);
 
         let checkboxFalse = document.createElement("input");
         checkboxFalse.setAttribute("type", "radio");
-        checkboxFalse.setAttribute("name", `radio${element}${id}`);
+        checkboxFalse.setAttribute("name", `radio${element.date}${id}`);
         checkboxContainer.append(checkboxFalse);
     });
 
@@ -49,10 +49,9 @@ export function displayAttendances(dates, id, parent)
             if (checkboxes[i].children[0].checked) isAvailable = true;
             else if (checkboxes[i].children[1].checked) isAvailable = false;
 
-            if (isAvailable != null) eventDates.push({ date: dates[i], available: isAvailable});
+            if (isAvailable != null) eventDates.push({ date: dates[i].date, available: isAvailable});
         }
         let data = { name: userName, dates: eventDates};
-        console.log(data);
         setAttendances(data, id); 
     })
 }
