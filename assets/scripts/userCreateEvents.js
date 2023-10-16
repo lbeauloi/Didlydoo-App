@@ -5,8 +5,9 @@ addButton.addEventListener("click", () => {
   createEventForm.style.flexDirection = "column";
 });
 //-----------------------------------------------------
+
 // --------------- CREATION DU FORMULAIRE-----------------------------
-const parentElement = document.querySelector(".modal");
+const parentElement = document.querySelector(".modal-content");
 
 // creation du form
 const form = document.createElement("form");
@@ -19,6 +20,7 @@ const eventNameInput = document.createElement("input");
 eventNameInput.placeholder = "Event name";
 eventNameInput.type = "text";
 eventNameInput.id = "event-name";
+eventNameInput.maxLength = 256;
 
 form.appendChild(eventNameLabel); // label est enfant du form
 form.appendChild(eventNameInput); // input est enfant de form
@@ -41,6 +43,7 @@ const eventAuthorInput = document.createElement("input");
 eventAuthorInput.placeholder = "Author";
 eventAuthorInput.type = "text";
 eventAuthorInput.id = "event-author";
+eventAuthorInput.maxLength = 256;
 
 form.appendChild(eventAuthorLabel);
 form.appendChild(eventAuthorInput);
@@ -50,6 +53,7 @@ const eventDescriptionLabel = document.createElement("label");
 const eventDescriptionTextarea = document.createElement("textarea");
 eventDescriptionTextarea.placeholder = "Event description";
 eventDescriptionTextarea.id = "event-description";
+eventDescriptionTextarea.maxLength = 256;
 
 form.appendChild(eventDescriptionLabel);
 form.appendChild(eventDescriptionTextarea);
@@ -58,6 +62,7 @@ form.appendChild(eventDescriptionTextarea);
 const submitButton = document.createElement("button");
 submitButton.type = "submit";
 submitButton.textContent = "Create Event";
+submitButton.id = "submitBtn";
 
 form.appendChild(submitButton);
 
