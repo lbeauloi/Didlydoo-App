@@ -10,7 +10,12 @@
     "created_at": "2023-10-16T07:38:37.507Z",
     "num_modification": 0,
     "last_modification": "2023-10-16T07:38:37.507Z",
-    "attendees": []
+    "attendees": [
+      {
+        "name": "Justine",
+        "dates": []
+      }
+    ]
   },
   {
     "id": "2b7ef9335238",
@@ -33,7 +38,7 @@
         "dates": [
           {
             "date": "2023-10-13",
-            "available": true
+            "available": false
           }
         ]
       }
@@ -199,7 +204,7 @@
         "dates": [
           {
             "date": "2022-03-17",
-            "available": true
+            "available": false
           },
           {
             "date": "2022-03-18",
@@ -211,7 +216,7 @@
           },
           {
             "date": "2022-03-22",
-            "available": true
+            "available": false
           }
         ]
       },
@@ -221,6 +226,23 @@
           {
             "date": "2022-03-17",
             "available": true
+          },
+          {
+            "date": "2022-03-18",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "Bob",
+        "dates": [
+          {
+            "date": "2022-03-17",
+            "available": true
+          },
+          {
+            "date": "2022-03-18",
+            "available": false
           }
         ]
       }
@@ -322,9 +344,21 @@
         "dates": [
           {
             "date": "2022-01-10",
+            "available": false
+          },
+          {
+            "date": "2022-02-10",
+            "available": false
+          },
+          {
+            "date": "2022-03-12",
             "available": true
           }
         ]
+      },
+      {
+        "name": "Bob",
+        "dates": []
       }
     ],
     "created_at": "2021-11-13T14:00",
