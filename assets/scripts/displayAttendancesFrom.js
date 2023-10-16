@@ -12,7 +12,7 @@ export function displayAttendances(dates, id, parent)
 
     let tdInput = document.createElement('td');
     tableRow.append(tdInput);
-    let inputContainer = document.createElement("div");
+    let inputContainer = document.createElement("form");
     inputContainer.classList.add("userNameContainer");
     tdInput.append(inputContainer);
 
@@ -20,11 +20,13 @@ export function displayAttendances(dates, id, parent)
     userNameInput.classList.add("userNameInput");
     userNameInput.setAttribute("type", "text");
     userNameInput.setAttribute("placeholder", "User name");
+    userNameInput.setAttribute("required", "true");
+    userNameInput.setAttribute("maxlength", "256");
     inputContainer.append(userNameInput);
 
     let sendButton = document.createElement("button");
     sendButton.classList.add("sendAttendancesButton");
-    sendButton.setAttribute("type", "button");
+    sendButton.setAttribute("type", "submit");
     sendButton.textContent = "send";
     inputContainer.append(sendButton);
 
@@ -70,10 +72,10 @@ export function displayAttendances(dates, id, parent)
     sendButton.addEventListener("click", () => {
         if (userNameInput.value == "")
         {
-            console.log("no user name given !");
             return;
         }
         let userName = userNameInput.value;
+        userName = userName.charAt(0).toUpperCase() + userName.slice(1);
         let eventDates = [];
         for (let i = 0; i < dates.length; i++)
         {
@@ -81,9 +83,9 @@ export function displayAttendances(dates, id, parent)
             if (checkboxes[i].children[1].checked) isAvailable = true;
             else if (checkboxes[i].children[3].checked) isAvailable = false;
 
-            if (isAvailable != null) eventDates.push({ date: dates[i].date, available: isAvailable});
+            if (isAvailable != null) eventDates.push({ date: dates[i].date, available: isAvailable });
         }
-        let data = { name: userName, dates: eventDates};
+        let data = { name: userName, dates: eventDates };
         setAttendances(data, id); 
     })
 }

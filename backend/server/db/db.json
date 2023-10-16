@@ -13,6 +13,10 @@
     "attendees": [
       {
         "name": "truc",
+        "dates": []
+      },
+      {
+        "name": "Justine",
         "dates": [
           {
             "date": "2023-10-13",
