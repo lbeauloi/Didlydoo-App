@@ -2,6 +2,7 @@ import { setAttendances } from "./setAttendances.js";
 
 export function displayAttendances(dates, id, parent)
 {
+    // Create a form for adding attendances
     let formContainer = document.createElement("div");
     formContainer.classList.add("attendancesForm");
 
@@ -35,6 +36,7 @@ export function displayAttendances(dates, id, parent)
 
     parent.append(formContainer);
 
+    // Add event to button to add attendances and give needed data
     sendButton.addEventListener("click", () => {
         if (userNameInput.value == "")
         {

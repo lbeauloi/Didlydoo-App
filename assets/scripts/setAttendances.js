@@ -2,6 +2,7 @@ import { getAllEvents } from "./getAllEvents.js";
 import { getEvent } from "./getEvent.js";
 const url = 'http://localhost:3000';
 
+// called to edit the attendances
 export function setAttendances(data, id)
 {
     let isNameThere;
@@ -27,6 +28,7 @@ export function setAttendances(data, id)
     })
 }
 
+// add attendances with not already present name
 async function addAttendance(data, id) 
 {
     const response = await fetch(`${url}/api/events/${id}/attend`, 
@@ -45,6 +47,7 @@ async function addAttendance(data, id)
     });
 }
 
+// add attendances for already present name
 async function editAttendance(data, id) 
 {
     const response = await fetch(`${url}/api/events/${id}/attend`, 

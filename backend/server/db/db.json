@@ -102,7 +102,16 @@
       },
       {
         "name": "Justine",
-        "dates": []
+        "dates": [
+          {
+            "date": "2022-03-17",
+            "available": false
+          },
+          {
+            "date": "2022-03-21",
+            "available": false
+          }
+        ]
       }
     ],
     "created_at": "2021-11-15T00:00",
