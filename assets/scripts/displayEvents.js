@@ -77,11 +77,11 @@ export function displayEvents(allEvents) {
                 // td.textContent = el.attendees[i].available;
                 if (el.attendees[i].available === true) {
                     td.textContent = 'V';
-                    td.style.color = 'rgba(0, 128, 0, 0.6)';
+                    td.style.color = 'rgba(0, 128, 0, 0.7)';
                 }
                 else if (el.attendees[i].available === false) {
                     td.textContent = 'X';
-                    td.style.color = 'rgba(220, 20, 60, 0.6)';
+                    td.style.color = 'rgba(220, 20, 60, 0.7)';
                 }
                 else {
                     td.textContent = '';
