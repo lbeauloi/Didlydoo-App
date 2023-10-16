@@ -113,4 +113,82 @@ body .app .add-event button:hover {
 }
 .events-list .event-item table th {
   background-color: #f0f0f0;
+}
+
+.modalUpdate {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+}
+.modalUpdate > div.modal-content-update {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: white;
+}
+.modalUpdate > div.modal-content-update div.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.modalUpdate > div.modal-content-update div.close p {
+  font-size: 2rem;
+  color: rgb(220, 20, 60);
+}
+.modalUpdate > div.modal-content-update h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+.modalUpdate > div.modal-content-update form#update-event-form {
+  display: flex;
+  flex-direction: column;
+}
+.modalUpdate > div.modal-content-update form#update-event-form input, .modalUpdate > div.modal-content-update form#update-event-form textarea {
+  margin: 10px;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid #a2a2a2;
+}
+.modalUpdate > div.modal-content-update form#update-event-form input::-moz-placeholder, .modalUpdate > div.modal-content-update form#update-event-form textarea::-moz-placeholder {
+  color: #a2a2a2;
+}
+.modalUpdate > div.modal-content-update form#update-event-form input::placeholder, .modalUpdate > div.modal-content-update form#update-event-form textarea::placeholder {
+  color: #a2a2a2;
+}
+.modalUpdate > div.modal-content-update form#update-event-form textarea {
+  height: 100px;
+}
+.modalUpdate > div.modal-content-update form#update-event-form button {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+  border: 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  background-color: rgba(0, 128, 0, 0.6);
+}
+.modalUpdate > div.modal-content-update form#update-event-form button:hover {
+  background-color: rgba(0, 128, 0, 0.8);
+}
+.modalUpdate.active {
+  visibility: visible;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
