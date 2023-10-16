@@ -1,5 +1,18 @@
 [
   {
+    "id": "86810a6759bb",
+    "name": "test event n°252",
+    "author": "Lucas",
+    "description": "super event test n°252",
+    "dates": [
+      "2023-12-10"
+    ],
+    "created_at": "2023-10-16T07:38:37.507Z",
+    "num_modification": 0,
+    "last_modification": "2023-10-16T07:38:37.507Z",
+    "attendees": []
+  },
+  {
     "id": "2b7ef9335238",
     "name": "event test",
     "author": "Lucas",
