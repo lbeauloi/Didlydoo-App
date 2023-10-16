@@ -62,7 +62,21 @@
     "created_at": "2023-10-13T14:38:41.629Z",
     "num_modification": 0,
     "last_modification": "2023-10-13T14:38:41.629Z",
-    "attendees": []
+    "attendees": [
+      {
+        "name": "truc",
+        "dates": []
+      },
+      {
+        "name": "Justine",
+        "dates": [
+          {
+            "date": "2023-10-13",
+            "available": false
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "79fbc66d9316",
@@ -201,18 +215,10 @@
         "dates": [
           {
             "date": "2022-03-17",
-            "available": true
-          },
-          {
-            "date": "2022-03-18",
             "available": false
           },
           {
-            "date": "2022-03-21",
-            "available": true
-          },
-          {
-            "date": "2022-03-22",
+            "date": "2022-03-18",
             "available": false
           }
         ]
@@ -222,11 +228,19 @@
         "dates": [
           {
             "date": "2022-03-17",
-            "available": false
+            "available": true
+          },
+          {
+            "date": "2022-03-18",
+            "available": true
           },
           {
             "date": "2022-03-21",
-            "available": false
+            "available": true
+          },
+          {
+            "date": "2022-03-22",
+            "available": true
           }
         ]
       }
@@ -287,23 +301,23 @@
         "dates": [
           {
             "date": "2022-01-10",
-            "available": false
+            "available": true
           },
           {
             "date": "2022-02-10",
-            "available": false
+            "available": true
           },
           {
             "date": "2022-03-10",
-            "available": false
+            "available": true
           },
           {
             "date": "2022-03-11",
-            "available": false
+            "available": true
           },
           {
             "date": "2022-03-12",
-            "available": false
+            "available": true
           }
         ]
       }

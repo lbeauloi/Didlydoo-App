@@ -1,0 +1,60 @@
+.attendancesForm
+{
+    .userNameContainer
+    {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        .userNameInput
+        {
+            width: 70px;
+        }
+
+        .sendAttendancesButton
+        {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+    
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+
+    .attendancesChekboxes
+    {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(184, 184, 184);
+        border-radius: 25px;
+        width: 80px;
+        margin: auto;
+        padding: 5px;
+
+        .checkboxTrue
+        {
+            display: none;
+        }
+
+        .checkboxFalse
+        {
+            display: none;
+        }
+
+        label 
+        {
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+
+        label:hover
+        {
+            color: #007bff;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import { displayAttendances } from "./displayAttendancesFrom.js";
+import { deleteEvent } from "./deleteEvent.js";
 
 // Récupère la div "events-list" qui contiendra tous les évènements
 const eventsList = document.querySelector('.events-list');
@@ -29,6 +30,7 @@ export function displayEvents(allEvents) {
         btnAddDate.textContent = 'Add date(s)';
         const btnDelete = document.createElement('button');
         btnDelete.textContent = 'Delete';
+        btnDelete.addEventListener('click', () => deleteEvent(event.id));
         
         btnContainer.appendChild(btnUpdate);
         btnContainer.appendChild(btnAddDate);
