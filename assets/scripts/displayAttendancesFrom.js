@@ -26,7 +26,7 @@ export function displayAttendances(dates, id, parent)
 
     let sendButton = document.createElement("button");
     sendButton.classList.add("sendAttendancesButton");
-    sendButton.setAttribute("type", "submit");
+    sendButton.setAttribute("type", "button");
     sendButton.textContent = "send";
     inputContainer.append(sendButton);
 
@@ -82,10 +82,13 @@ export function displayAttendances(dates, id, parent)
             let isAvailable;
             if (checkboxes[i].children[1].checked) isAvailable = true;
             else if (checkboxes[i].children[3].checked) isAvailable = false;
+            //else if ()
+            console.log(dates[i].attendees);
 
             if (isAvailable != null) eventDates.push({ date: dates[i].date, available: isAvailable });
         }
         let data = { name: userName, dates: eventDates };
+        //console.log(data);
         setAttendances(data, id); 
     })
 }
