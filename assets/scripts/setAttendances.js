@@ -40,10 +40,10 @@ async function addAttendance(data, id)
         body: JSON.stringify(data),
     })
     .then((response) => {
-        getAllEvents();
+        //getAllEvents();
       })
     .catch((error) => {
-    console.error("Error :", error);
+        console.error("Error :", error);
     });
 }
 
@@ -59,7 +59,7 @@ async function editAttendance(data, id)
         body: JSON.stringify(data), 
     })
     .then((response) => {
-        getAllEvents();
+        //getAllEvents();
       })
     .catch((error) => {
     console.error("Error :", error);
