@@ -1,5 +1,6 @@
 import { displayAttendances } from "./displayAttendancesFrom.js";
 import { deleteEvent } from "./deleteEvent.js";
+import { findBestDate } from "./findBestDate.js";
 
 // Récupère la div "events-list" qui contiendra tous les évènements
 const eventsList = document.querySelector('.events-list');
@@ -31,10 +32,14 @@ export function displayEvents(allEvents) {
         const btnDelete = document.createElement('button');
         btnDelete.textContent = 'Delete';
         btnDelete.addEventListener('click', () => deleteEvent(event.id));
+        const btnBestDate = document.createElement('button');
+        btnBestDate.textContent = 'Best Date';
+        btnBestDate.addEventListener('click', () => { findBestDate(event) });
         
         btnContainer.appendChild(btnUpdate);
         btnContainer.appendChild(btnAddDate);
         btnContainer.appendChild(btnDelete);
+        btnContainer.appendChild(btnBestDate);
         
         titleBtn.appendChild(name);
         titleBtn.appendChild(btnContainer);
@@ -104,6 +109,12 @@ export function displayEvents(allEvents) {
         
         // Add availability edit
         displayAttendances(event.dates, event.id, eventItem);
+
+        // Display best date depending on attendees
+        const bestDateDisplay = document.createElement("div");
+        eventItem.append(bestDateDisplay);
+        bestDateDisplay.classList.add('bestDateDisplay');
+        findBestDate(event, bestDateDisplay);
 
         // Ajoute l'évènement à la liste
         eventsList.appendChild(eventItem);
