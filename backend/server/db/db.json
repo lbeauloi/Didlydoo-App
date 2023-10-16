@@ -1,18 +1,5 @@
 [
   {
-    "id": "2b7ef9335238",
-    "name": "event test",
-    "author": "Lucas",
-    "description": "event test ",
-    "dates": [
-      "2023-10-13"
-    ],
-    "created_at": "2023-10-13T14:38:41.629Z",
-    "num_modification": 0,
-    "last_modification": "2023-10-13T14:38:41.629Z",
-    "attendees": []
-  },
-  {
     "id": "79fbc66d9316",
     "name": "Annif Fabienne 2",
     "author": "Fabienne",
