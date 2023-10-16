@@ -1,122 +1,5 @@
 [
   {
-    "id": "86810a6759bb",
-    "name": "test event n°252",
-    "author": "Lucas",
-    "description": "super event test n°252",
-    "dates": [
-      "2023-12-10"
-    ],
-    "created_at": "2023-10-16T07:38:37.507Z",
-    "num_modification": 0,
-    "last_modification": "2023-10-16T07:38:37.507Z",
-    "attendees": []
-  },
-  {
-    "id": "2b7ef9335238",
-    "name": "event test",
-    "author": "Lucas",
-    "description": "event test ",
-    "dates": [
-      "2023-10-13"
-    ],
-    "created_at": "2023-10-13T14:38:41.629Z",
-    "num_modification": 0,
-    "last_modification": "2023-10-13T14:38:41.629Z",
-    "attendees": [
-      {
-        "name": "truc",
-        "dates": []
-      },
-      {
-        "name": "Justine",
-        "dates": [
-          {
-            "date": "2023-10-13",
-    "id": "fc171245aa14",
-    "name": "Halloween",
-    "author": "Fabien",
-    "description": "Faire le tour du quartier avec les enfants, ramasser un max de bonbons et boire un chocolat chaud.",
-    "dates": [
-      "2023-10-17"
-    ],
-    "created_at": "2023-10-16T08:49:03.544Z",
-    "num_modification": 18,
-    "last_modification": "2023-10-16T14:20:28.215Z",
-    "attendees": [
-      {
-        "name": "Jeff",
-        "dates": [
-          {
-            "date": "2023-10-17",
-            "available": false
-          }
-        ]
-      },
-      {
-        "name": "Olivia",
-        "dates": [
-          {
-            "date": "2023-10-17",
-            "available": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "79fbc66d9316",
-    "name": "Surprise 2",
-    "author": "Caroline",
-    "description": "Anniversaire de Jack.",
-    "dates": [
-      "2028-06-06"
-    ],
-    "created_at": "2023-10-13T14:36:45.880Z",
-    "num_modification": 1,
-    "last_modification": "2023-10-16T13:29:38.075Z",
-    "attendees": []
-  },
-  {
-    "id": "d1618fe107ed",
-    "name": "Anniv Fabien",
-    "author": "Fabien",
-    "description": "J’fête mes 18 ans. J’organise une petite fête au Zoute. Ça va être bien, j’invite toute la Belgique !",
-    "dates": [
-      "2025-06-08"
-    ],
-    "created_at": "2023-10-13T14:34:24.473Z",
-    "num_modification": 1,
-    "last_modification": "2023-10-16T12:21:18.933Z",
-    "attendees": []
-  },
-  {
-    "id": "4508f79f1de1",
-    "name": "Fete de fou ",
-    "author": "Lucas",
-    "description": "Fete de fou pour la fin de la forma BeCode j'invite toute la belgique ",
-    "dates": [
-      "2023-06-18"
-    ],
-    "created_at": "2023-10-13T13:35:39.433Z",
-    "num_modification": 0,
-    "last_modification": "2023-10-13T13:35:39.433Z",
-    "attendees": []
-  },
-  {
-    "id": "284a45c0c000",
-    "name": "Lucas",
-    "author": "Lucas",
-    "description": "Mon anniversaire j'invite tout BeCode",
-    "dates": [
-      "2023-06-04"
-    ],
-    "created_at": "2023-10-13T13:30:43.504Z",
-    "num_modification": 0,
-    "last_modification": "2023-10-13T13:30:43.504Z",
-    "attendees": []
-  },
-  {
     "id": "f5b6564b5dc4",
     "name": "My sweet 16",
     "description": "I am going to be 16, let us all party together! Help me pick a date so we can go together",
@@ -157,78 +40,6 @@
             "available": true
           }
         ]
-      },
-      {
-        "name": "test",
-        "dates": [
-          {
-            "date": "2022-03-17",
-            "available": false
-          },
-          {
-            "date": "2022-03-18",
-            "available": false
-          },
-          {
-            "date": "2022-03-21",
-            "available": false
-          },
-          {
-            "date": "2022-03-22",
-            "available": false
-          }
-        ]
-      },
-      {
-        "name": "justine",
-        "dates": [
-          {
-            "date": "2022-03-17",
-            "available": true
-          },
-          {
-            "date": "2022-03-18",
-            "available": false
-          },
-          {
-            "date": "2022-03-21",
-            "available": true
-          }
-        ]
-      },
-      {
-        "name": "truc",
-        "dates": [
-          {
-            "date": "2022-03-17",
-            "available": false
-          },
-          {
-            "date": "2022-03-18",
-            "available": false
-          }
-        ]
-      },
-      {
-        "name": "Justine",
-        "dates": [
-          {
-            "date": "2022-03-17",
-            "available": true
-          },
-          {
-            "date": "2022-03-18",
-            "available": true
-          },
-          {
-            "date": "2022-03-21",
-            "available": true
-          },
-          {
-            "date": "2022-03-22",
-            "available": true
-          }
-        ]
       }
     ],
     "created_at": "2021-11-15T00:00",
@@ -253,22 +64,6 @@
         "dates": [
           {
             "date": "2022-01-10",
-            "available": false
-          },
-          {
-            "date": "2022-02-10",
-            "available": true
-          },
-          {
-            "date": "2022-03-10",
-            "available": true
-          },
-          {
-            "date": "2022-03-11",
-            "available": true
-          },
-          {
-            "date": "2022-03-12",
             "available": true
           }
         ]
@@ -295,40 +90,6 @@
           {
             "date": "2022-03-12",
             "available": false
-          }
-        ]
-      },
-      {
-        "name": "truc",
-        "dates": [
-          {
-            "date": "2022-01-10",
-            "available": true
-          },
-          {
-            "date": "2022-02-10",
-            "available": true
-          },
-          {
-            "date": "2022-03-10",
-            "available": true
-          },
-          {
-            "date": "2022-03-11",
-            "available": true
-          },
-          {
-            "date": "2022-03-12",
-            "available": true
-          }
-        ]
-      },
-      {
-        "name": "Truc",
-        "dates": [
-          {
-            "date": "2022-01-10",
-            "available": true
           }
         ]
       }
