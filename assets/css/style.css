@@ -9,7 +9,7 @@ Files inside this folder can contain abstract settings, helpers or functions. Th
 This file is used to contain all base imports.
 Files inside this folder can contain global styles used in the project.
 */
-* {
+*, ::before, ::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,54 +23,96 @@ Files inside this folder should contain all styles relating to a reusable compon
 This file is used to contain all component imports.
 Files inside this folder can contain specific element styles and layout. 
 */
-.app .events-list {
-  padding: 5vh 3vw;
-  background-color: #a1a1a1;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
 }
-
-.event-item {
-  padding: 5vh 3vw;
-  margin: 3vh;
-  background-color: #f2f2f2;
-  border-radius: 30px;
-}
-.event-item .titleBtn div > button {
-  margin: 0 5px;
-  padding: 5px 10px;
+body .app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
-.event-item .titleBtn div > button:nth-of-type(1) {
-  background-color: rgba(0, 128, 0, 0.4);
-}
-.event-item .titleBtn div > button:nth-of-type(2) {
-  background-color: rgba(0, 128, 0, 0.4);
-}
-.event-item .titleBtn div > button:nth-of-type(3) {
-  background-color: rgba(220, 20, 60, 0.6);
-}
-.event-item p {
-  padding: 20px 40px;
-}
-.event-item table {
+
+.title {
   text-align: center;
 }
-.event-item table tbody td {
-  padding: 5px 10px;
-  border: 1px solid black;
-  width: 150px;
-  font-weight: 600;
-}
-.event-item table tbody td:first-of-type {
-  text-align: left;
-  width: 200px;
+.title h1 {
+  font-size: 32px;
 }
 
-@media only screen and (min-width: 678px) {
-  .event-item .titleBtn {
-    display: flex;
-    justify-content: space-between;
-  }
+.add-event {
+  text-align: center;
+  margin-top: 20px;
+}
+.add-event button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add-event button:hover {
+  background-color: #0056b3;
+}
+
+.events-list {
+  margin-top: 20px;
+}
+.events-list .event-item {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.events-list .event-item .titleBtn {
+  display: flex;
+  justify-content: space-between;
+}
+.events-list .event-item .titleBtn h2 {
+  font-size: 24px;
+}
+.events-list .event-item .titleBtn button {
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.events-list .event-item .titleBtn button:nth-of-type(1) {
+  background-color: rgba(0, 128, 0, 0.6);
+}
+.events-list .event-item .titleBtn button:nth-of-type(2) {
+  background-color: rgba(0, 128, 0, 0.6);
+  margin: 0 5px;
+}
+.events-list .event-item .titleBtn button:hover {
+  background-color: rgba(0, 128, 0, 0.8);
+}
+.events-list .event-item .titleBtn button:nth-of-type(3) {
+  background-color: rgba(220, 20, 60, 0.7);
+}
+.events-list .event-item .titleBtn button:nth-of-type(3):hover {
+  background-color: rgb(220, 20, 60);
+}
+.events-list .event-item p {
+  margin: 10px 0 5px;
+}
+.events-list .event-item table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.events-list .event-item table th, .events-list .event-item table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+.events-list .event-item table th {
+  background-color: #f0f0f0;
 }/*# sourceMappingURL=style.css.map */
