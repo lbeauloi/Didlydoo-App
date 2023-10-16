@@ -1,5 +1,5 @@
 
-import { displayEvents } from "./displayEvents.js";
+// import { displayEvents } from "./displayEvents.js";
 
 export async function getAllEvents() {
 
