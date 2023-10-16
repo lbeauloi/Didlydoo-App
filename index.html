@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,24 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     
 </head>
+
 <body>
     <div class="app">
+        <div id="modalUpdateForm" class="modalUpdate">
+            <div class="modal-content-update">
+                <div class="close">
+                    <p>&times;</p>
+                </div>
+                <h2>Update Event</h2>
+                <form id="update-event-form">
+                    <input type="text" id="nameToUpdate" maxlength="256">
+                    <input type="text" id="authorToUpdate" maxlength="256">
+                    <textarea id="descriptionToUpdate" maxlength="256"></textarea>
+                    <button type="submit">UPDATE</button>
+                </form>
+            </div>
+        </div>
+
         <div class="title">
             <h1>Didlydoo</h1>
         </div>
@@ -31,8 +48,9 @@
         </div>
         
     </div>
-    
+
     <script type="module" src="assets/scripts/main.js"></script>
     <script defer src="/assets/scripts/userCreateEvents.js"></script>
 </body>
-</html> 
+
+</html>
