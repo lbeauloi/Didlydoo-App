@@ -11,6 +11,8 @@ Files inside this folder can contain global styles used in the project.
 */
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*
@@ -20,4 +22,55 @@ Files inside this folder should contain all styles relating to a reusable compon
 /*
 This file is used to contain all component imports.
 Files inside this folder can contain specific element styles and layout. 
-*//*# sourceMappingURL=style.css.map */
+*/
+.app .events-list {
+  padding: 5vh 3vw;
+  background-color: #a1a1a1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.event-item {
+  padding: 5vh 3vw;
+  margin: 3vh;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+}
+.event-item .titleBtn div > button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.event-item .titleBtn div > button:nth-of-type(1) {
+  background-color: rgba(0, 128, 0, 0.4);
+}
+.event-item .titleBtn div > button:nth-of-type(2) {
+  background-color: rgba(0, 128, 0, 0.4);
+}
+.event-item .titleBtn div > button:nth-of-type(3) {
+  background-color: rgba(220, 20, 60, 0.6);
+}
+.event-item p {
+  padding: 20px 40px;
+}
+.event-item table {
+  text-align: center;
+}
+.event-item table tbody td {
+  padding: 5px 10px;
+  border: 1px solid black;
+  width: 150px;
+  font-weight: 600;
+}
+.event-item table tbody td:first-of-type {
+  text-align: left;
+  width: 200px;
+}
+
+@media only screen and (min-width: 678px) {
+  .event-item .titleBtn {
+    display: flex;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=style.css.map */

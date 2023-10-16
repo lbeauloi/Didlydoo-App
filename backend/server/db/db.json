@@ -105,6 +105,78 @@
             "available": true
           }
         ]
+      },
+      {
+        "name": "test",
+        "dates": [
+          {
+            "date": "2022-03-17",
+            "available": false
+          },
+          {
+            "date": "2022-03-18",
+            "available": false
+          },
+          {
+            "date": "2022-03-21",
+            "available": false
+          },
+          {
+            "date": "2022-03-22",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "justine",
+        "dates": [
+          {
+            "date": "2022-03-17",
+            "available": true
+          },
+          {
+            "date": "2022-03-18",
+            "available": false
+          },
+          {
+            "date": "2022-03-21",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "truc",
+        "dates": [
+          {
+            "date": "2022-03-17",
+            "available": true
+          },
+          {
+            "date": "2022-03-18",
+            "available": false
+          },
+          {
+            "date": "2022-03-21",
+            "available": true
+          },
+          {
+            "date": "2022-03-22",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "Justine",
+        "dates": [
+          {
+            "date": "2022-03-17",
+            "available": false
+          },
+          {
+            "date": "2022-03-21",
+            "available": false
+          }
+        ]
       }
     ],
     "created_at": "2021-11-15T00:00",
@@ -151,6 +223,31 @@
           {
             "date": "2022-03-11",
             "available": true
+          },
+          {
+            "date": "2022-03-12",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "truc",
+        "dates": [
+          {
+            "date": "2022-01-10",
+            "available": false
+          },
+          {
+            "date": "2022-02-10",
+            "available": false
+          },
+          {
+            "date": "2022-03-10",
+            "available": false
+          },
+          {
+            "date": "2022-03-11",
+            "available": false
           },
           {
             "date": "2022-03-12",

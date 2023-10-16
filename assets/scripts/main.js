@@ -1,6 +1,8 @@
-
-
+import { displayEvents } from "./displayEvents.js";
 import { getAllEvents } from "./getAllEvents.js";
+import "./setAttendances.js";
 
-
-getAllEvents();
+getAllEvents()
+ .then((eventsJson) => {
+    displayEvents(eventsJson);
+ })
