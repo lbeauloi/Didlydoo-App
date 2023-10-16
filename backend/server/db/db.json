@@ -1,5 +1,18 @@
 [
   {
+    "id": "3086ae65037f",
+    "name": "Fin du projet ",
+    "author": "Lucas",
+    "description": "Fin du projet, nous sommes heureux",
+    "dates": [
+      "2023-10-17"
+    ],
+    "created_at": "2023-10-16T13:32:44.762Z",
+    "num_modification": 0,
+    "last_modification": "2023-10-16T13:32:44.762Z",
+    "attendees": []
+  },
+  {
     "id": "86810a6759bb",
     "name": "test event n°252",
     "author": "Lucas",

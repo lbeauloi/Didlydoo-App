@@ -66,21 +66,19 @@ submitButton.id = "submitBtn";
 
 form.appendChild(submitButton);
 
-// on ajoute le formulaire a parentElement (= la div app)
+// on ajoute le formulaire a parentElement (= la div modal-content)
 parentElement.appendChild(form);
 
 // ------------ MODAL-------------------
-// const createEventForm = document.getElementById("event-form");
 const modal = document.getElementById("modalForm");
-// const addButton = document.querySelector(".add-event button");
 const closeBtn = document.querySelector(".close");
 
-// on affiche le modal
+// ouverture du modal
 addButton.addEventListener("click", function () {
   modal.style.display = "block";
 });
 
-// on masque le modal
+// fermeture du  modal
 closeBtn.addEventListener("click", function () {
   modal.style.display = "none";
   const modalContent = document.querySelector(".modal-content");
@@ -89,8 +87,8 @@ closeBtn.addEventListener("click", function () {
 
 // -------------------------------------
 
-// ----------------------RECUP DES DONNEES ET ENVOI VERS L API---------------------
-const createEventForm = document.getElementById("event-form");
+// --------------RECUP DES DONNEES ET ENVOI VERS L API----------------
+const createEventForm = document.getElementById("event-form"); //form
 
 createEventForm.addEventListener("submit", function (event) {
   event.preventDefault(); // on veut pas que l'user envoie un formulaire vide
@@ -101,7 +99,7 @@ createEventForm.addEventListener("submit", function (event) {
   const eventAuthor = document.getElementById("event-author").value;
   const eventDescription = document.getElementById("event-description").value;
 
-  // on cree un objet avec les données du formulaire (pour l'envoyer dans l'api apres)
+  // on cree un objet avec les données du formulaire (pour l'envoyer dans l'API)
   const eventData = {
     name: eventName,
     dates: eventDates,
