@@ -1,9 +1,16 @@
+//----AFFICHER LE FORM AVEC UN EVENT LISTENNER (il est masqué par defaut)-----
+const addButton = document.querySelector(".add-event button");
+addButton.addEventListener("click", () => {
+  createEventForm.style.display = "flex";
+  createEventForm.style.flexDirection = "column";
+});
+//-----------------------------------------------------
 // --------------- CREATION DU FORMULAIRE-----------------------------
-const parentElement = document.querySelector(".app");
+const parentElement = document.querySelector(".modal");
 
 // creation du form
 const form = document.createElement("form");
-form.id = "create-event-form"; // on lui donne un ID
+form.id = "event-form"; // on lui donne un ID
 
 // label + input pour le NOM de l'event
 const eventNameLabel = document.createElement("label");
@@ -21,7 +28,7 @@ const eventDatesLabel = document.createElement("label");
 const eventDatesInput = document.createElement("input");
 
 eventDatesInput.placeholder = "(YYYY-MM-DD)";
-eventDatesInput.type = "text";
+eventDatesInput.type = "date";
 eventDatesInput.id = "event-dates";
 
 form.appendChild(eventDatesLabel);
@@ -56,10 +63,29 @@ form.appendChild(submitButton);
 
 // on ajoute le formulaire a parentElement (= la div app)
 parentElement.appendChild(form);
-//---------------------------------------------------------------------------------
+
+// ------------ MODAL-------------------
+// const createEventForm = document.getElementById("event-form");
+const modal = document.getElementById("modalForm");
+// const addButton = document.querySelector(".add-event button");
+const closeBtn = document.querySelector(".close");
+
+// on affiche le modal
+addButton.addEventListener("click", function () {
+  modal.style.display = "block";
+});
+
+// on masque le modal
+closeBtn.addEventListener("click", function () {
+  modal.style.display = "none";
+  const modalContent = document.querySelector(".modal-content");
+  modalContent.appendChild(form);
+});
+
+// -------------------------------------
 
 // ----------------------RECUP DES DONNEES ET ENVOI VERS L API---------------------
-const createEventForm = document.getElementById("create-event-form");
+const createEventForm = document.getElementById("event-form");
 
 createEventForm.addEventListener("submit", function (event) {
   event.preventDefault(); // on veut pas que l'user envoie un formulaire vide

@@ -6,3 +6,4 @@ getAllEvents()
  .then((eventsJson) => {
     displayEvents(eventsJson);
  })
+ 

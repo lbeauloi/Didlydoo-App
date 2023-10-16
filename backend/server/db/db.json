@@ -1,5 +1,31 @@
 [
   {
+    "id": "a0a0a138553d",
+    "name": "test test",
+    "author": "bob",
+    "description": "bobobobobo",
+    "dates": [
+      "2023-10-21"
+    ],
+    "created_at": "2023-10-16T10:33:07.691Z",
+    "num_modification": 0,
+    "last_modification": "2023-10-16T10:33:07.691Z",
+    "attendees": []
+  },
+  {
+    "id": "a413b6cbd358",
+    "name": "ufuirefure",
+    "author": "Bob",
+    "description": "annif de bob",
+    "dates": [
+      "2023-10-20"
+    ],
+    "created_at": "2023-10-16T10:01:16.400Z",
+    "num_modification": 0,
+    "last_modification": "2023-10-16T10:01:16.400Z",
+    "attendees": []
+  },
+  {
     "id": "86810a6759bb",
     "name": "test event n°252",
     "author": "Lucas",
