@@ -99,13 +99,6 @@ body .app .add-event button:hover {
 .events-list .event-item .titleBtn button:nth-of-type(3):hover {
   background-color: rgb(220, 20, 60);
 }
-.events-list .event-item .titleBtn button:nth-of-type(4) {
-  background-color: #007bff;
-  margin: 0 5px;
-}
-.events-list .event-item .titleBtn button:nth-of-type(4):hover {
-  background-color: #0056b3;
-}
 .events-list .event-item p {
   margin: 10px 0 5px;
 }

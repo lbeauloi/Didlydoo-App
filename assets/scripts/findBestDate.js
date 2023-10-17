@@ -37,18 +37,3 @@ export function findBestDate(event, div)
         div.textContent = `The best date for this event is: ${bestDate}`;
     });
 }
-
-
-
-/*
-
-var attendances = [true, null, false]
-var bestDate
-
-for each date
- get attendances
- check if better than actual attendances
-
-take best date
-
-*/

@@ -32,14 +32,10 @@ export function displayEvents(allEvents) {
         const btnDelete = document.createElement('button');
         btnDelete.textContent = 'Delete';
         btnDelete.addEventListener('click', () => deleteEvent(event.id));
-        const btnBestDate = document.createElement('button');
-        btnBestDate.textContent = 'Best Date';
-        btnBestDate.addEventListener('click', () => { findBestDate(event) });
         
         btnContainer.appendChild(btnUpdate);
         btnContainer.appendChild(btnAddDate);
         btnContainer.appendChild(btnDelete);
-        btnContainer.appendChild(btnBestDate);
         
         titleBtn.appendChild(name);
         titleBtn.appendChild(btnContainer);
