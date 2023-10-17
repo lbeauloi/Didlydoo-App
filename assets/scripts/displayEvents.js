@@ -48,6 +48,10 @@ export function displayEvents(allEvents) {
 
         // Start - table
         const table = document.createElement('table');
+        const tableContainer = document.createElement('div');
+        tableContainer.classList.add('eventTableContainer');
+        tableContainer.append(table);
+
         // thead
         const thead = document.createElement('thead');
         const trh = document.createElement('tr');
@@ -101,7 +105,7 @@ export function displayEvents(allEvents) {
         // Ajoute tous les éléments de l'évènement
         eventItem.appendChild(titleBtn);
         eventItem.appendChild(description);
-        eventItem.appendChild(table);
+        eventItem.appendChild(tableContainer);
         
         // Add availability edit
         displayAttendances(event.dates, event.id, eventItem);

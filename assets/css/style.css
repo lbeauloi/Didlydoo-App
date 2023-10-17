@@ -102,16 +102,19 @@ body .app .add-event button:hover {
 .events-list .event-item p {
   margin: 10px 0 5px;
 }
-.events-list .event-item table {
+.events-list .event-item .eventTableContainer {
+  overflow-y: scroll;
+}
+.events-list .event-item .eventTableContainer table {
   width: 100%;
   border-collapse: collapse;
 }
-.events-list .event-item table th, .events-list .event-item table td {
+.events-list .event-item .eventTableContainer table th, .events-list .event-item .eventTableContainer table td {
   border: 1px solid #ccc;
   padding: 8px;
   text-align: center;
 }
-.events-list .event-item table th {
+.events-list .event-item .eventTableContainer table th {
   background-color: #f0f0f0;
 }
 .events-list .event-item .bestDateDisplay {

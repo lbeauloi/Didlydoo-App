@@ -54,18 +54,23 @@
         }
 
         // Tableau récapitulatif des disponibilités
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        .eventTableContainer
+        {
+            overflow-y: scroll;
 
-            th, td {
-                border: 1px solid #ccc;
-                padding: 8px;
-                text-align: center;
-            }
-
-            th {
-                background-color: #f0f0f0;
+            table {
+                width: 100%;
+                border-collapse: collapse;
+    
+                th, td {
+                    border: 1px solid #ccc;
+                    padding: 8px;
+                    text-align: center;
+                }
+    
+                th {
+                    background-color: #f0f0f0;
+                }
             }
         }
 
