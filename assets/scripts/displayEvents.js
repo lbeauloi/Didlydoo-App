@@ -2,6 +2,7 @@ import { displayAttendances } from "./displayAttendancesFrom.js";
 import { deleteEvent } from "./deleteEvent.js";
 import { findBestDate } from "./findBestDate.js";
 import { updateEventForm } from "./updateEventForm.js";
+import { addDateForm } from "./addDateForm.js";
 
 // Récupère la div "events-list" qui contiendra tous les évènements
 const eventsList = document.querySelector('.events-list');
@@ -31,6 +32,7 @@ export function displayEvents(allEvents) {
         btnUpdate.addEventListener('click', () => updateEventForm(event.id, event.name, event.author, event.description));
         const btnAddDate = document.createElement('button');
         btnAddDate.textContent = 'Add date(s)';
+        btnAddDate.addEventListener('click', () => addDateForm(event.id, event.dates));
         const btnDelete = document.createElement('button');
         btnDelete.textContent = 'Delete';
         btnDelete.addEventListener('click', () => deleteEvent(event.id));

@@ -9,7 +9,7 @@ export async function updateEventForm(idToUpdate, nameToUpdate, authorToUpdate, 
     updateForm.classList.add('active');
 
     // Masquer le formulaire
-    let close = document.querySelector('.close');
+    let close = document.querySelector('.modalUpdate .close');
     close.addEventListener('click', function() {
         updateForm.classList.remove('active')
     })
