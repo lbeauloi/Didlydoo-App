@@ -34,14 +34,10 @@ export function displayEvents(allEvents) {
         const btnDelete = document.createElement('button');
         btnDelete.textContent = 'Delete';
         btnDelete.addEventListener('click', () => deleteEvent(event.id));
-        const btnBestDate = document.createElement('button');
-        btnBestDate.textContent = 'Best Date';
-        btnBestDate.addEventListener('click', () => { findBestDate(event) });
         
         btnContainer.appendChild(btnUpdate);
         btnContainer.appendChild(btnAddDate);
         btnContainer.appendChild(btnDelete);
-        btnContainer.appendChild(btnBestDate);
         
         titleBtn.appendChild(name);
         titleBtn.appendChild(btnContainer);
@@ -54,6 +50,10 @@ export function displayEvents(allEvents) {
 
         // Start - table
         const table = document.createElement('table');
+        const tableContainer = document.createElement('div');
+        tableContainer.classList.add('eventTableContainer');
+        tableContainer.append(table);
+
         // thead
         const thead = document.createElement('thead');
         const trh = document.createElement('tr');
@@ -107,7 +107,7 @@ export function displayEvents(allEvents) {
         // Ajoute tous les éléments de l'évènement
         eventItem.appendChild(titleBtn);
         eventItem.appendChild(description);
-        eventItem.appendChild(table);
+        eventItem.appendChild(tableContainer);
         
         // Add availability edit
         displayAttendances(event.dates, event.id, eventItem);

@@ -10,7 +10,6 @@ export async function getAllEvents() {
     const eventsJson = await eventsResponse.json();
     // console.log('All events : ', eventsJson);
 
-    //displayEvents(eventsJson);
     return eventsJson;
 
 }

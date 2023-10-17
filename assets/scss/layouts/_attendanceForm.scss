@@ -1,27 +1,29 @@
 .attendancesForm
-{
+{   
+    @extend %eventsAttendanceFormResponsive;
+
     .userNameContainer
     {
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 10px;
 
         .userNameInput
         {
-            width: 70px;
+            height: fit-content;
         }
 
         .sendAttendancesButton
         {
-            background-color: #007bff;
+            background-color: $lightBlue;
             color: #fff;
-            padding: 5px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
     
             &:hover {
-                background-color: #0056b3;
+                background-color: $darkBlue;
             }
         }
     }
@@ -32,9 +34,7 @@
         justify-content: space-between;
         background-color: rgb(184, 184, 184);
         border-radius: 25px;
-        width: 80px;
         margin: auto;
-        padding: 5px;
 
         .checkboxTrue
         {
@@ -54,7 +54,7 @@
 
         label:hover
         {
-            color: #007bff;
+            color: $lightBlue;
         }
     }
 }
