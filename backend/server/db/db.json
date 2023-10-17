@@ -238,22 +238,6 @@
         "dates": [
           {
             "date": "2022-01-10",
-            "available": false
-          },
-          {
-            "date": "2022-02-10",
-            "available": true
-          },
-          {
-            "date": "2022-03-10",
-            "available": true
-          },
-          {
-            "date": "2022-03-11",
-            "available": true
-          },
-          {
-            "date": "2022-03-12",
             "available": true
           }
         ]
@@ -280,40 +264,6 @@
           {
             "date": "2022-03-12",
             "available": false
-          }
-        ]
-      },
-      {
-        "name": "truc",
-        "dates": [
-          {
-            "date": "2022-01-10",
-            "available": true
-          },
-          {
-            "date": "2022-02-10",
-            "available": true
-          },
-          {
-            "date": "2022-03-10",
-            "available": true
-          },
-          {
-            "date": "2022-03-11",
-            "available": true
-          },
-          {
-            "date": "2022-03-12",
-            "available": true
-          }
-        ]
-      },
-      {
-        "name": "Truc",
-        "dates": [
-          {
-            "date": "2022-01-10",
-            "available": true
           }
         ]
       }
