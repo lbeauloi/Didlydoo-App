@@ -71,7 +71,7 @@ parentElement.appendChild(form);
 
 // ------------ MODAL-------------------
 const modal = document.getElementById("modalForm");
-const closeBtn = document.querySelector(".close");
+const closeBtn = document.querySelector(".closeCross");
 
 // ouverture du modal
 addButton.addEventListener("click", function () {
