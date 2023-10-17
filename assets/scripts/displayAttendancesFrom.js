@@ -73,6 +73,7 @@ export function displayAttendances(dates, id, parent)
             return;
         }
         let userName = userNameInput.value;
+        userName = userName.toLowerCase();
         userName = userName.charAt(0).toUpperCase() + userName.slice(1);
         let eventDates = [];
         for (let i = 0; i < dates.length; i++)
