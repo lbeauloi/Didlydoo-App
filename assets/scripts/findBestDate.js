@@ -1,8 +1,10 @@
+// find and display the best date for an event based on the attendees
 export function findBestDate(event, div)
 {
     let bestAttendances = [0, 0];
     let bestDate = null;
 
+    // check if there is only one date
     if (event.dates.length == 1)
     {
         bestDate = event.dates[0].date;
@@ -10,6 +12,7 @@ export function findBestDate(event, div)
         return;
     }
 
+    // if more than one date look for the best one
     event.dates.forEach(date => {
         if (bestDate == null)
         {

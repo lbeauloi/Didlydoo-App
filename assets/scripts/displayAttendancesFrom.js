@@ -66,8 +66,6 @@ export function displayAttendances(dates, id, parent)
         checkboxFalse.addEventListener("change", () => { checkFalse(checkboxContainer); });
     });
 
-    //parent.append(formContainer);
-
     // Add event to button to add attendances and give needed data
     sendButton.addEventListener("click", () => {
         if (userNameInput.value == "")
