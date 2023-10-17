@@ -11,6 +11,18 @@
 
 <body>
     <div class="app">
+
+        <div class="title">
+            <h1>Didlydoo</h1>
+        </div>
+
+        <div class="add-event">
+            <button>Add an event</button>
+        </div>
+        
+        <div class="events-list"></div>
+
+        <!-- Edit Event - Start -->
         <div id="modalUpdateForm" class="modalUpdate">
             <div class="modal-content-update">
                 <div class="close">
@@ -25,27 +37,28 @@
                 </form>
             </div>
         </div>
+        <!-- Edit Event - End -->
 
-        <div class="title">
-            <h1>Didlydoo</h1>
-        </div>
 
-        <div id="modalForm" class="modal">
-            <div class="modal-content">
-              <span class="close"><img src="assets/images/close.png"></span> 
-              <h2>Create Event</h2>
-              
+        <!-- Add Dates - Start -->
+        <div id="modalAddDateForm" class="modalAddDate">
+            <div class="modal-content-add-date">
+                <div class="close">
+                    <p>&times;</p>
+                </div>
+                <h2>Add Date(s)</h2>
+                <form id="add-date-event-form">
+                    <div class="dates-container">
+                        <!-- <div class="dateToAdd">
+                            <input type="date" class="date">
+                            <button type="button" class="addDateBtn">+</button>
+                        </div> -->
+                    </div>
+                    <button type="submit">ADD DATE(S)</button>
+                </form>
             </div>
         </div>
-          
-
-        <div class="add-event">
-            <button>Add an event</button>
-        </div>
-        
-        <div class="events-list">
-        
-        </div>
+        <!-- Add Dates - End -->
         
     </div>
 

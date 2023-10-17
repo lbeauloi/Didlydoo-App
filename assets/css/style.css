@@ -318,4 +318,107 @@ body .app .add-event button:hover {
 .modalUpdate.active {
   visibility: visible;
   opacity: 1;
+}
+
+.modalAddDate {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+}
+.modalAddDate > div.modal-content-add-date {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: white;
+}
+.modalAddDate > div.modal-content-add-date div.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.modalAddDate > div.modal-content-add-date div.close p {
+  font-size: 2rem;
+  color: rgb(220, 20, 60);
+}
+.modalAddDate > div.modal-content-add-date h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+.modalAddDate > div.modal-content-add-date form#add-date-event-form {
+  display: flex;
+  flex-direction: column;
+}
+.modalAddDate > div.modal-content-add-date form#add-date-event-form .dates-container {
+  display: flex;
+  flex-direction: column;
+}
+.modalAddDate > div.modal-content-add-date form#add-date-event-form .dates-container .dateToAdd {
+  display: flex;
+  align-items: center;
+}
+.modalAddDate > div.modal-content-add-date form#add-date-event-form .dates-container .dateToAdd input {
+  margin: 10px;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid #a2a2a2;
+}
+.modalAddDate > div.modal-content-add-date form#add-date-event-form .dates-container .dateToAdd input::-moz-placeholder {
+  color: #a2a2a2;
+}
+.modalAddDate > div.modal-content-add-date form#add-date-event-form .dates-container .dateToAdd input::placeholder {
+  color: #a2a2a2;
+}
+.modalAddDate > div.modal-content-add-date form#add-date-event-form .dates-container .dateToAdd button {
+  border-radius: 50%;
+  margin: 10px 5px;
+}
+.modalAddDate > div.modal-content-add-date form#add-date-event-form .dates-container .dateToAdd button.addDateBtn {
+  background-color: #007bff;
+}
+.modalAddDate > div.modal-content-add-date form#add-date-event-form .dates-container .dateToAdd button.addDateBtn:hover {
+  background-color: #0056b3;
+}
+.modalAddDate > div.modal-content-add-date form#add-date-event-form .dates-container .dateToAdd button.deleteDateBtn {
+  background-color: rgba(220, 20, 60, 0.8);
+}
+.modalAddDate > div.modal-content-add-date form#add-date-event-form .dates-container .dateToAdd button.deleteDateBtn:hover {
+  background-color: rgb(220, 20, 60);
+}
+.modalAddDate > div.modal-content-add-date form#add-date-event-form .dates-container .dateToAdd p {
+  font-size: 0.7rem;
+  padding-left: 20px;
+}
+.modalAddDate > div.modal-content-add-date form#add-date-event-form button {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+  border: 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  background-color: rgba(0, 128, 0, 0.6);
+}
+.modalAddDate > div.modal-content-add-date form#add-date-event-form button:hover {
+  background-color: rgba(0, 128, 0, 0.8);
+}
+.modalAddDate.active {
+  visibility: visible;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
