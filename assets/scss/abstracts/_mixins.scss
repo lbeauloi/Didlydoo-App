@@ -1,0 +1,142 @@
+// Media query
+$breakpoints: 
+(
+  "phone-down": 500px,
+  "tablet-up": 768px,
+  "tablet-down": 900px,
+  "desktop-up": 1024px,
+  "desktop-down": 1280px,
+  "widescreen-up": 1440px
+);
+
+@mixin media-min($_key)
+{
+    @media screen and (min-width: map-get($breakpoints, $_key))
+    {
+        &{@content;}
+    }
+}
+
+// Responsive events
+%eventsTitleResponsive
+{   
+    $titleSize: 15px;
+    $buttonSize: 10px;
+    $buttonPaddingV: 5px;
+    $buttonPaddingH: 3px;
+    $buttonMargin: 1px;
+
+    h2 
+    {
+        font-size: $titleSize;
+    }
+
+    button
+    {
+        font-size: $buttonSize;
+        padding: $buttonPaddingH $buttonPaddingV;
+        margin: 0 $buttonMargin;
+    }
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $titleSize: $titleSize + 2px;
+            $buttonSize: $buttonSize + 1px;
+            $buttonPaddingV: $buttonPaddingV + 1px;
+            $buttonPaddingH: $buttonPaddingH + 0.5px;
+            $buttonMargin: $buttonMargin + 0.5px;
+
+            h2 
+            {
+                font-size: $titleSize;
+            }
+
+            button
+            {
+                font-size: $buttonSize;
+                padding: $buttonPaddingH $buttonPaddingV;
+                margin: 0 $buttonMargin;
+            }
+        }
+    }
+}
+
+%eventsTextResponsive
+{
+    $fontSize: 10px;
+
+    font-size: $fontSize;
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $fontSize: $fontSize + 1.2px;
+
+            font-size: $fontSize;
+        }
+    }
+}
+
+%eventsAttendanceFormResponsive
+{
+    $fontSize: 10px;
+    $inputWidth: 60px;
+    $buttonPadding: 3px;
+    $checkWidth: 45px;
+    $checkPadding: 3px;
+
+    .userNameContainer
+    {
+        .userNameInput
+        {
+            font-size: $fontSize;
+            width: $inputWidth;
+        }
+        .sendAttendancesButton
+        {
+            font-size: $fontSize;
+            padding: $buttonPadding;
+        }
+    }
+    .attendancesChekboxes
+    {
+        width: $checkWidth;
+        font-size: $fontSize;
+        padding: $checkPadding;
+    }
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $fontSize: $fontSize + 1px;
+            $inputWidth: $inputWidth + 10px;
+            $buttonPadding: $buttonPadding + 0.2px;
+            $checkWidth: $checkWidth + 5px;
+            $checkPadding: $checkPadding + 0.2px;
+
+            .userNameContainer
+            {
+                .userNameInput
+                {
+                    font-size: $fontSize;
+                    width: $inputWidth;
+                }
+                .sendAttendancesButton
+                {
+                    font-size: $fontSize;
+                    padding: $buttonPadding;
+                }
+            }
+            .attendancesChekboxes
+            {
+                width: $checkWidth;
+                font-size: $fontSize;
+                padding: $checkPadding;
+            }
+        }
+    }
+}

@@ -5,6 +5,213 @@ This file is used to contain all vendor imports.
 This file is used to contain all abstracts imports.
 Files inside this folder can contain abstract settings, helpers or functions. They have no direct output.
 */
+.events-list .event-item .titleBtn h2 {
+  font-size: 15px;
+}
+.events-list .event-item .titleBtn button {
+  font-size: 10px;
+  padding: 3px 5px;
+  margin: 0 1px;
+}
+@media screen and (min-width: 500px) {
+  .events-list .event-item .titleBtn h2 {
+    font-size: 17px;
+  }
+  .events-list .event-item .titleBtn button {
+    font-size: 11px;
+    padding: 3.5px 6px;
+    margin: 0 1.5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .events-list .event-item .titleBtn h2 {
+    font-size: 19px;
+  }
+  .events-list .event-item .titleBtn button {
+    font-size: 12px;
+    padding: 4px 7px;
+    margin: 0 2px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .events-list .event-item .titleBtn h2 {
+    font-size: 21px;
+  }
+  .events-list .event-item .titleBtn button {
+    font-size: 13px;
+    padding: 4.5px 8px;
+    margin: 0 2.5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .events-list .event-item .titleBtn h2 {
+    font-size: 23px;
+  }
+  .events-list .event-item .titleBtn button {
+    font-size: 14px;
+    padding: 5px 9px;
+    margin: 0 3px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .events-list .event-item .titleBtn h2 {
+    font-size: 25px;
+  }
+  .events-list .event-item .titleBtn button {
+    font-size: 15px;
+    padding: 5.5px 10px;
+    margin: 0 3.5px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .events-list .event-item .titleBtn h2 {
+    font-size: 27px;
+  }
+  .events-list .event-item .titleBtn button {
+    font-size: 16px;
+    padding: 6px 11px;
+    margin: 0 4px;
+  }
+}
+
+.events-list .event-item {
+  font-size: 10px;
+}
+@media screen and (min-width: 500px) {
+  .events-list .event-item {
+    font-size: 11.2px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .events-list .event-item {
+    font-size: 12.4px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .events-list .event-item {
+    font-size: 13.6px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .events-list .event-item {
+    font-size: 14.8px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .events-list .event-item {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .events-list .event-item {
+    font-size: 17.2px;
+  }
+}
+
+.attendancesForm .userNameContainer .userNameInput {
+  font-size: 10px;
+  width: 60px;
+}
+.attendancesForm .userNameContainer .sendAttendancesButton {
+  font-size: 10px;
+  padding: 3px;
+}
+.attendancesForm .attendancesChekboxes {
+  width: 45px;
+  font-size: 10px;
+  padding: 3px;
+}
+@media screen and (min-width: 500px) {
+  .attendancesForm .userNameContainer .userNameInput {
+    font-size: 11px;
+    width: 70px;
+  }
+  .attendancesForm .userNameContainer .sendAttendancesButton {
+    font-size: 11px;
+    padding: 3.2px;
+  }
+  .attendancesForm .attendancesChekboxes {
+    width: 50px;
+    font-size: 11px;
+    padding: 3.2px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .attendancesForm .userNameContainer .userNameInput {
+    font-size: 12px;
+    width: 80px;
+  }
+  .attendancesForm .userNameContainer .sendAttendancesButton {
+    font-size: 12px;
+    padding: 3.4px;
+  }
+  .attendancesForm .attendancesChekboxes {
+    width: 55px;
+    font-size: 12px;
+    padding: 3.4px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .attendancesForm .userNameContainer .userNameInput {
+    font-size: 13px;
+    width: 90px;
+  }
+  .attendancesForm .userNameContainer .sendAttendancesButton {
+    font-size: 13px;
+    padding: 3.6px;
+  }
+  .attendancesForm .attendancesChekboxes {
+    width: 60px;
+    font-size: 13px;
+    padding: 3.6px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .attendancesForm .userNameContainer .userNameInput {
+    font-size: 14px;
+    width: 100px;
+  }
+  .attendancesForm .userNameContainer .sendAttendancesButton {
+    font-size: 14px;
+    padding: 3.8px;
+  }
+  .attendancesForm .attendancesChekboxes {
+    width: 65px;
+    font-size: 14px;
+    padding: 3.8px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .attendancesForm .userNameContainer .userNameInput {
+    font-size: 15px;
+    width: 110px;
+  }
+  .attendancesForm .userNameContainer .sendAttendancesButton {
+    font-size: 15px;
+    padding: 4px;
+  }
+  .attendancesForm .attendancesChekboxes {
+    width: 70px;
+    font-size: 15px;
+    padding: 4px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .attendancesForm .userNameContainer .userNameInput {
+    font-size: 16px;
+    width: 120px;
+  }
+  .attendancesForm .userNameContainer .sendAttendancesButton {
+    font-size: 16px;
+    padding: 4.2px;
+  }
+  .attendancesForm .attendancesChekboxes {
+    width: 75px;
+    font-size: 16px;
+    padding: 4.2px;
+  }
+}
+
 /*
 This file is used to contain all base imports.
 Files inside this folder can contain global styles used in the project.
@@ -73,12 +280,8 @@ body .app .add-event button:hover {
   display: flex;
   justify-content: space-between;
 }
-.events-list .event-item .titleBtn h2 {
-  font-size: 24px;
-}
 .events-list .event-item .titleBtn button {
   color: #fff;
-  padding: 5px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -88,7 +291,6 @@ body .app .add-event button:hover {
 }
 .events-list .event-item .titleBtn button:nth-of-type(2) {
   background-color: rgba(0, 128, 0, 0.6);
-  margin: 0 5px;
 }
 .events-list .event-item .titleBtn button:hover {
   background-color: rgba(0, 128, 0, 0.8);
@@ -103,7 +305,8 @@ body .app .add-event button:hover {
   margin: 10px 0 5px;
 }
 .events-list .event-item .eventTableContainer {
-  overflow-y: scroll;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 .events-list .event-item .eventTableContainer table {
   width: 100%;
@@ -193,15 +396,15 @@ body .app .add-event button:hover {
 .attendancesForm .userNameContainer {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 .attendancesForm .userNameContainer .userNameInput {
-  width: 70px;
+  height: fit-content;
 }
 .attendancesForm .userNameContainer .sendAttendancesButton {
   background-color: #007bff;
   color: #fff;
-  padding: 5px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -214,9 +417,7 @@ body .app .add-event button:hover {
   justify-content: space-between;
   background-color: rgb(184, 184, 184);
   border-radius: 25px;
-  width: 80px;
   margin: auto;
-  padding: 5px;
 }
 .attendancesForm .attendancesChekboxes .checkboxTrue {
   display: none;
