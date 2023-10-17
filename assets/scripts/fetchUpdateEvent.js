@@ -24,7 +24,7 @@ export async function fetchUpdateEvent(e, id, updatedEvent) {
             updateForm.classList.remove('active');
         })
         .catch((error) => {
-            console.error("Erreur lors de la requête PATCH :", error);
+            console.error("Erreur lors de la requête PATCH (fetchUpdateEvent) :", error);
         });
 
 }

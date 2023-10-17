@@ -1,4 +1,5 @@
 
+import { fetchAddDate } from "./fetchAddDate.js";
 
 export function addDateForm(id, dates) {
     // console.log('id : ', id);
@@ -125,6 +126,31 @@ export function addDateForm(id, dates) {
 
 
 
+    // Envoie du formulaire
+    let form = document.querySelector('#add-date-event-form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
 
-    let form = document.querySelector
+        // Récupère les "participants" de l'évènement
+        let attendees = dates[0].attendees;
+        console.log(attendees);
+
+        // Récupére les dates entrées dans les inputs
+        let datesToAdd = document.querySelectorAll('.date');   // NodeList
+        let datesToAddTab = [...datesToAdd];              // Array
+        let datesToAddMap = datesToAddTab.map(date => date.value);
+        let data = [];
+        // ↓ (datesToAddValues.length - 1) car le dernier input est vide, on ne le prend donc pas
+        for (let i = 0; i < (datesToAddMap.length - 1); i++) {
+            data = [...data, datesToAddMap[i]];
+        }
+
+        // console.log('data : ', data);
+        // console.log('id : ', id);
+        fetchAddDate(id, data);
+
+        // // Masquer le formulaire
+        // let modalAddDate = document.querySelector('.modalAddDate');
+        // modalAddDate.classList.remove('active');
+    })
 }
